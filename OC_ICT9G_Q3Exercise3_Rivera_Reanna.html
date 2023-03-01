@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		img{
+			height: 100px;
+			width: 90px;
+		}
+
+		h2{
+			font-family: Gloock
+		}
+
+		td, input, form{
+			font-family: Nunito;
+		}
+		body{
+			background-image: url(https://wallpaper.dog/large/38721.jpg);
+			background-size: cover;
+			/* reference; https://wallpaper.dog/hogwarts-desktop-wallpapers*/
+		}
+
+	</style>
+
+	<title>Q3 Exercise 3</title>
+</head>
+<body>
+	<div class="container">
+		<h2 class="bg-dark text-light text-center">Hogwarts School of Witchcrafts and Wizardy</h2>
+		<table class="table table-dark table-hover">
+			<tr>
+				<td>Picture</td>
+				<td>First Name</td>
+				<td>Last Name</td>
+				<td>House</td>
+				<td>Reference</td>
+			</tr>
+
+			<tr>
+				<td><img src="https://static.wikia.nocookie.net/neoencyclopedia/images/4/44/HarryPotter5poster.jpg/revision/latest?cb=20121121021021" class="img-thumbnail"></td>
+				<td>Harry</td>
+				<td>Potter</td>
+				<td>Gryffindor</td>
+				<td>https://neoencyclopedia.fandom.com/wiki/Harry_Potter_(character)</td>
+			</tr>
+
+			<tr>
+				<td><img src="https://static.wikia.nocookie.net/antagonisten/images/0/0d/Draco-malfoy-portrait.png/revision/latest?cb=20220331192639&path-prefix=de" class="img-thumbnail"></td>
+				<td>Draco</td>
+				<td>Malfoyr</td>
+				<td>Gryffindor</td>
+				<td>https://schurken.fandom.com/de/wiki/Draco_Malfoy</td>
+			</tr>
+
+			<tr>
+				<td><img src="https://static.wikia.nocookie.net/harry-potter-and-fantastic-beasts-films/images/5/56/Ron_Weasley_%28Scopatore%29.jpg/revision/latest?cb=20181013181206" class="img-thumbnail"></td>
+				<td>Ron</td>
+				<td>Weasley</td>
+				<td>Gryffindor</td>
+				<td>https://harry-potter-and-fantastic-beasts-films.fandom.com/wiki/Ron_Weasley</td>
+			</tr>
+
+			<tr>
+				<td><img src="https://static.wikia.nocookie.net/characters/images/a/a5/Latest_%2810%29.jpg/revision/latest/scale-to-width-down/1200?cb=20141230074301" class="img-thumbnail"></td>
+				<td>Hermione</td>
+				<td>Grangerr</td>
+				<td>Gryffindor</td>
+				<td>https://characters.fandom.com/wiki/Hermione_Granger</td>
+			</tr>
+		</table>
+
+		<div class="container">
+			<form class="form-group">
+				Enter Firstname: <input type="text" name="fname" class="form-control">
+				Enter Lastname: <input type="text" name="lname" class="form-control">
+				Choose House:
+				<select class="form-control">
+					<option>Gryffindor</option>
+					<option>Ravenclaw</option>
+					<option>Hufflepuff</option>
+					<option>Slytherin</option>
+				</select>
+				Select Birthdate: <input type="date" name="bday" class="form-control">
+				Upload Picture: <input type="file" name="Picture" class="form-control">
+				<input type="submit" name="submit" value="ADD STUDENT" class="btn btn-success btn-block">
+				<input type="reset" name="cancel" value="CANCEL" class="btn btn-danger btn-block">
+			</form>
+		</div>
+
+
+	</div>
+	<br>
+
+	<footer class="text-light">&copy;rrrivera2023</footer>
+
+</body>
+</html>
